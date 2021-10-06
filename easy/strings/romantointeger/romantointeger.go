@@ -86,3 +86,8 @@ func romanToInt(s string) int {
 	}
 	return num;
 }
+
+/*
+	Time complexity: O(n)
+	Space Complexity O(1)
+*/
