@@ -25,7 +25,7 @@ Constraints:
 s consists only of printable ASCII characters.
 */
 
-package validpalindrome
+package main
 
 import "strings"
 

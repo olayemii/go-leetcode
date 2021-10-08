@@ -39,7 +39,7 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 */
 
-package validparentheses
+package main
 
 func isValid(s string) bool {
     stack := make([]rune, 0, len(s))
