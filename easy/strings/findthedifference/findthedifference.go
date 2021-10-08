@@ -53,6 +53,9 @@ func findTheDifference(s string, t string) byte {
     return byte(sumT-sumS)
 }
 
+func main() {
+}
+
 /*
 	Space Complexity: 0(1)
 	Time Complexity: 0(n)
