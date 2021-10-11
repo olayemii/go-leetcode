@@ -53,3 +53,8 @@ func strStr(haystack string, needle string) int {
 	}
 	return -1;
 }
+
+/*
+	Space Complexity: 0(1)
+	Time Complexity: 0(n)
+*/
