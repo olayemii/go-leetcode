@@ -57,7 +57,7 @@ func titleToNumber(columnTitle string) int {
 	strLen := len(columnTitle) - 1;
 	sum := 0;
 	for pos, item := range columnTitle {
-		sum += int(item-64) * int(math.Pow(26, float64(strLen - pos))) 
+		sum += int(item-65) * int(math.Pow(26, float64(strLen - pos))) 
 	} 
     return sum;
 }
