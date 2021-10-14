@@ -28,6 +28,8 @@
 
 package main
 
+import "fmt"
+
 func isAnagram(s string, t string) bool {
     if (len(s) != len(t)) {
 		return false
@@ -36,22 +38,22 @@ func isAnagram(s string, t string) bool {
 	for pos, char := range s {
 		if _, ok := hashmap[char]; ok {
 			hashmap[char] = hashmap[char] + 1
-			if (hashmap[char] == 0) {
-				delete(hashmap, char)
-			}
 		}else{
 			hashmap[char] = 1
 		}
 		if _, ok := hashmap[rune(t[pos])]; ok {
 			hashmap[rune(t[pos])] = hashmap[rune(t[pos])] - 1
-			if (hashmap[rune(t[pos])] == 0) {
-				delete(hashmap, rune(t[pos]))
-			}
 		}else{
 			hashmap[rune(t[pos])] = -1
 		}
 	}
-	return len(hashmap) == 0
+	fmt.Println(hashmap)
+	for _, item := range hashmap {
+		if item != 0 {
+			return false;
+		}
+	}
+	return true
 }
 
 /*
