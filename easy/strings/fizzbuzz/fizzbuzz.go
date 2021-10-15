@@ -52,3 +52,6 @@ func fizzBuzz(n int) []string {
 
 	return arr;
 }
+
+// Space Complexity: O(n)
+// Time Complexity: O(n)
