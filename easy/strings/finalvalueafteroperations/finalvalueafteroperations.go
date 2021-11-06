@@ -50,12 +50,10 @@ operations[i] will be either "++X", "X++", "--X", or "X--".
 */
 package main
 
-import "strings"
-
 func finalValueAfterOperations(operations []string) int {
 	initialValue := 0;
 	for _, op := range operations {
-		if strings.Index(op, "+") > -1 {
+		if op[1] == '+' {
 			initialValue++
 		}else{
 			initialValue--
