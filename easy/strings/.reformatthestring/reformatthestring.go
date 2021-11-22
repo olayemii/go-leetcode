@@ -44,7 +44,9 @@ s consists of only lowercase English letters and/or digits.
 
 package main
 
-import "math"
+import (
+	"math"
+)
 
 func reformat(s string) string {
     alphaArr, numArr := []rune{}, []rune{}
@@ -85,7 +87,6 @@ func permutateString(string1 string, string2 string) string {
         i++
         j++
     }
-    
     return ans
 }
 
