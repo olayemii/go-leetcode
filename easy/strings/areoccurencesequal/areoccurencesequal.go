@@ -49,5 +49,5 @@ func areOccurrencesEqual(s string) bool {
 	return true
 }
 
-// Space Complexity: O(1)
+// Space Complexity: O(n)
 // Time Complexity: O(n)
