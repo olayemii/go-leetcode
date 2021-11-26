@@ -39,6 +39,8 @@ s1 and s2 consist of only lowercase English letters.
 
 package main
 
+
+
 func areAlmostEqual(s1 string, s2 string) bool {
     swaps, freqArr := 0, [26]int{}
     if s1 == s2 {
