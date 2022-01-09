@@ -37,8 +37,10 @@ Constraints:
 0 <= key <= 106
 At most 104 calls will be made to add, remove, and contains.
 */
+package main
+
 type MyHashSet struct {
-	Vals [1024]int
+	Vals [1000001]int
 }
 
 func Constructor() MyHashSet {
