@@ -34,16 +34,13 @@ Constraints:
 package main
 
 func numIdenticalPairs(nums []int) int {
-	i, j, ans := 0, 0, 0
-	for i < len(nums) {
-		for j < len(nums) {
+	ans := 0
+	for i := 0; i < len(nums); i++ {
+		for j := i + 1; j < len(nums); j++ {
 			if nums[j] == nums[i] && i < j {
 				ans++
 			}
-			j++
 		}
-		i++
-		j = 0
 	}
 
 	return ans
