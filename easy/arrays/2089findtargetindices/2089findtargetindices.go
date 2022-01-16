@@ -53,4 +53,4 @@ func targetIndices(nums []int, target int) []int {
 }
 
 // Space Complexity: O(n)
-// TIme Complexity: O(n)
+// TIme Complexity: O(nLogn)
