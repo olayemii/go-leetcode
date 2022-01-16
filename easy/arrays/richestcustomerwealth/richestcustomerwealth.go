@@ -42,19 +42,18 @@ n == accounts[i].length
 package main
 
 func maximumWealth(accounts [][]int) int {
-	ans := make([]int, len(accounts))
+	max := 0
 	for pos := range accounts {
+		sum := 0
 		for pos2 := range accounts[pos] {
-			ans[pos] += accounts[pos][pos2]
+			sum += accounts[pos][pos2]
 		}
-	}
-	max := ans[0]
 
-	for _, item := range ans {
-		if item > max {
-			max = item
+		if sum > max {
+			max = sum
 		}
 	}
+
 	return max
 }
 
